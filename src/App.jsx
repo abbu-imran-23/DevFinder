@@ -1,10 +1,15 @@
 import React from 'react'
 import './App.css'
+import DevDetails from './Components/DevDetails'
+import Header from './Components/Header'
+import SearchBar from './Components/SearchBar'
 
 const App = () => {
   return (
     <div>
-      <h1 className='text-3xl font-bold font-mono text-center text-green-500'>Project Setup done!</h1>
+      <Header/>
+      <SearchBar/>
+      <DevDetails/>
     </div>
   )
 }
