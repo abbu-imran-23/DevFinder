@@ -6,7 +6,7 @@ import SearchBar from './Components/SearchBar'
 
 const App = () => {
   return (
-    <div>
+    <div className='w-full gap-2 h-[100vh] flex flex-col justify-center items-center bg-bgColor'>
       <Header/>
       <SearchBar/>
       <DevDetails/>

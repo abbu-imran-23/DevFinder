@@ -14,6 +14,9 @@ module.exports = {
         // Buttons
         'buttonColor': "#0079ff",
         'buttonHoverColor': "#60abff"
+      },
+      backgroundImage: {
+        'profileImage': "url(./assets/images/search-icon.svg)"
       }
     },
   },
