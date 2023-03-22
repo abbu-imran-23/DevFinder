@@ -3,7 +3,7 @@ import { LocationIcon, WebsiteIcon, TwitterIcon, CompanyIcon } from '../Utils/Ic
 
 const DevDetails = ({devInfo}) => {
 
-  const {avatar_url, name, created_at, login, bio, 
+  const {avatar_url, name, created_at, login, html_url, bio, 
          public_repos, followers, following, location,
           website, twitter_username, company} = devInfo;
 
@@ -24,7 +24,7 @@ const DevDetails = ({devInfo}) => {
             <h2 className='text-3xl mx-auto md:mx-0 font-semibold font-mono'>{name}</h2>
             <span className='text-[1.125rem] mt-1 mr-0 md:mr-4 font-light font-mono hidden md:block'>{created_at}</span>
           </div>
-          <span className='text-[1.1rem] text-center md:text-start font-light font-mono'>@{login}</span>
+          <a href={html_url} className='text-[1.1rem] text-[#1731b4] text-center md:text-start font-normal font-mono'>@{login}</a>
         </div>
 
         {/* Bio Section */}
